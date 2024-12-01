@@ -105,6 +105,15 @@ table tr:hover {
     background: #f1f1f1;
 }
 
+#home h2 {
+    font-size: 3rem; /* Povećana veličina naslova */
+}
+
+#home p {
+    font-size: 1.8rem; /* Povećana veličina paragrafa */
+}
+
+
 /* Home Image */
 .home-image {
     width: 100%;

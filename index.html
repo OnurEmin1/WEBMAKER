@@ -10,28 +10,65 @@
     <header>
         <h1>Napravimo Vašu Stranicu</h1>
         <p>Profesionalne web stranice po vašoj meri!</p>
-        <!-- Hamburger ikona -->
-        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
-            &#9776; <!-- Unicode za hamburger meni ikonu -->
-        </div>
     </header>
 
-    <nav id="mobile-nav" class="hidden">
+    <nav>
         <button class="tab-button active" data-tab="home">Home</button>
         <button class="tab-button" data-tab="about">Saznajte Više</button>
+        <button class="tab-button" data-tab="payment">Plaćanja</button>
         <button class="tab-button" data-tab="contact">Kontakt</button>
     </nav>
 
+    <!-- Home Section -->
     <div id="home" class="container active">
         <h2>Dobrodošli!</h2>
         <p>Ovdje možete saznati više o izradi vaših web stranica.</p>
+        <img src="ja.png" alt="Web dizajn" class="home-image">
+        <p>Naruđbe možete obaviti na 'kontakt'</p>
+        <p>Kada naručujete, morate imati:</p>
+        <ul>
+            <li>Boja stranice</li>
+            <li>Temu stranice</li>
+            <li>Dizajn stranice (slika ili pisani dokument)</li>
+            <li>Slike koje će biti na stranici (poslati putem e-mail)</li>
+        </ul>
+        <p>Ne radimo marketing poput šopa.</p>
+        <p>Plaćanja se vrše putem pošte nakon izrađene stranice.</p>
+        <img src="reklama.jpg" alt="Web Dizajn" class="home-image">
     </div>
 
+    <!-- About Section -->
     <div id="about" class="container">
         <h2>Zašto odabrati nas?</h2>
         <p>Naš tim je specijalizovan za izradu modernih, brzih i prilagodljivih web stranica. Kontaktirajte nas kako biste saznali više o našim uslugama.</p>
+        <p>Idealno i brzo izrađene stranice po vašoj želji.</p>
+        <p>--------100 %--------</p>
     </div>
 
+    <!-- Payment Section -->
+    <div id="payment" class="container">
+        <h2>Plaćanja</h2>
+        <table>
+            <tr>
+                <th>Usmerenje</th>
+                <th>Cena</th>
+            </tr>
+            <tr>
+                <td>Osnovna stranica</td>
+                <td>100 €</td>
+            </tr>
+            <tr>
+                <td>Napredna stranica</td>
+                <td>200 €</td>
+            </tr>
+            <tr>
+                <td>Premium stranica</td>
+                <td>300 €</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Contact Section -->
     <div id="contact" class="container">
         <h2>Kontaktirajte nas</h2>
         <p>Za bilo kakva pitanja, slobodno nas kontaktirajte putem email-a:</p>

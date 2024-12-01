@@ -13,5 +13,11 @@ document.querySelectorAll('.tab-button').forEach(button => {
         // Prikazuj odgovarajuću sekciju
         const tabName = button.getAttribute('data-tab');
         document.getElementById(tabName).classList.add('active');
+
+        function toggleMenu() {
+    const menu = document.getElementById('mobile-nav');
+    menu.classList.toggle('hidden');
+}
+
     });
 });

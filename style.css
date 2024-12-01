@@ -31,18 +31,7 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Hamburger Menu Icon */
-.menu-icon {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 1rem;
-    background-color: #3399ff;
-    border-radius: 5px;
-    color: white;
-}
-
-/* Navigation Menu */
+/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -64,25 +53,6 @@ nav {
     background: #ff6600;
 }
 
-/* Mobile Menu */
-#mobile-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-    background-color: #003366;
-    padding: 1rem;
-    border-radius: 5px;
-    position: absolute;
-    top: 3rem;
-    right: 1rem;
-    width: auto;
-}
-
-#mobile-nav.hidden {
-    display: none;
-}
-
 /* Content Containers */
 .container {
     display: none;
@@ -94,23 +64,51 @@ nav {
     display: block;
 }
 
+/* Home Section */
+#home h2 {
+    font-size: 3rem; /* Povećana veličina naslova */
+}
+
+#home p {
+    font-size: 1.8rem; /* Povećana veličina paragrafa */
+}
+
+/* Home Image */
+.home-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+/* Table for Payment Section */
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #fff;
+}
+
+th, td {
+    padding: 0.8rem;
+}
+
+th {
+    background-color: #3399ff;
+}
+
+td {
+    background-color: #003366;
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.5);
     font-size: 0.9rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    /* Show hamburger menu on small screens */
-    .menu-icon {
-        display: block;
-    }
-
-    /* Hide the main nav menu */
-    nav {
-        display: none;
-    }
 }

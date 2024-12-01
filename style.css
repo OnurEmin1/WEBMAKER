@@ -5,9 +5,8 @@ body, h1, h2, p, nav, footer, button {
     box-sizing: border-box;
     font-size: 1rem;
 }
-#home p {
-    font-size: 1.5rem; /* Povećaj veličinu paragrafa u Home sekciji */
-}
+
+
 
 /* Body Styling */
 body {
@@ -66,6 +65,19 @@ nav {
 .container.active {
     display: block;
 }
+
+#home h2 {
+    font-size: 2.5rem; /* Povećaj veličinu naslova h2 u Home sekciji */
+}
+
+#home p {
+    font-size: 1.8rem; /* Povećaj veličinu paragrafa p u Home sekciji */
+}
+
+#home {
+    font-size: 1.5rem; /* Možeš postaviti osnovnu veličinu fonta za sve tekstove u Home sekciji */
+}
+
 
 /* Footer */
 footer {

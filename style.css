@@ -1,9 +1,12 @@
 /* Reset */
 body, h1, h2, p, nav, footer, button {
-    margin: 10;
-    padding: 10;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-size: 2.0;
+    font-size: 1rem;
+}
+home p {
+    font-size: 1.5rem; /* Povećaj veličinu paragrafa u Home sekciji */
 }
 
 /* Body Styling */
@@ -64,51 +67,48 @@ nav {
     display: block;
 }
 
-/* Home Section */
-#home h2 {
-    font-size: 3rem; /* Povećana veličina naslova */
-}
-
-#home p {
-    font-size: 1.8rem; /* Povećana veličina paragrafa */
-}
-
-/* Home Image */
-.home-image {
-    width: 100%;
-    max-width: 600px;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-
-/* Table for Payment Section */
-table {
-    width: 100%;
-    margin-top: 1rem;
-    border-collapse: collapse;
-    text-align: left;
-}
-
-table, th, td {
-    border: 1px solid #fff;
-}
-
-th, td {
-    padding: 0.8rem;
-}
-
-th {
-    background-color: #3399ff;
-}
-
-td {
-    background-color: #003366;
-}
-
 /* Footer */
 footer {
     text-align: center;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.5);
     font-size: 0.9rem;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #3399ff;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Home Image */
+.home-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
 }

@@ -1,18 +1,22 @@
-// script.js
-
-// Funkcija za prebacivanje između tabova
+// JavaScript to toggle between active sections on click
 document.querySelectorAll('.tab-button').forEach(button => {
-    button.addEventListener('click', () => {
-        // Ukloni 'active' klasu sa svih tabova
-        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');  // Dodaj 'active' klasu na pritisnuti tab
+    button.addEventListener('click', function() {
+        const tabName = this.getAttribute('data-tab');
         
-        // Sakrij sve sekcije
-        document.querySelectorAll('.container').forEach(container => container.classList.remove('active'));
+        // Remove active class from all sections
+        document.querySelectorAll('.container').forEach(container => {
+            container.classList.remove('active');
+        });
         
-        // Prikazuj odgovarajuću sekciju
-        const tabName = button.getAttribute('data-tab');
+        // Add active class to the selected section
         document.getElementById(tabName).classList.add('active');
-
+        
+        // Remove active class from all buttons
+        document.querySelectorAll('.tab-button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // Add active class to the clicked button
+        this.classList.add('active');
     });
 });

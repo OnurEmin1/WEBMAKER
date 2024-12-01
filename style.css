@@ -5,7 +5,7 @@ body, h1, h2, p, nav, footer, button {
     box-sizing: border-box;
     font-size: 1rem;
 }
-#home p {
+home p {
     font-size: 1.5rem; /* Povećaj veličinu paragrafa u Home sekciji */
 }
 

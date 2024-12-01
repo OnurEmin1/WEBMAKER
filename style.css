@@ -1,0 +1,82 @@
+/* Reset */
+body, h1, h2, p, nav, footer, button {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-size: 2.0;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #003366, #3399ff);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+#home h2 {
+    font-size: 2.5rem; /* Povećaj veličinu naslova u Home sekciji */
+}
+
+#home p {
+    font-size: 1.5rem; /* Povećaj veličinu paragrafa u Home sekciji */
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.tab-button {
+    background: #3399ff;
+    border: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.tab-button.active {
+    background: #ff6600;
+}
+
+/* Content Containers */
+.container {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container.active {
+    display: block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+}

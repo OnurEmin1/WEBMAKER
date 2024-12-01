@@ -6,7 +6,7 @@ body, h1, h2, p, nav, footer, button {
     font-size: 1rem;
 }
 home p {
-    font-size: 1.5rem; /* Povećaj veličinu paragrafa u Home sekciji */
+    font-size: 2.5rem; /* Povećaj veličinu paragrafa u Home sekciji */
 }
 
 /* Body Styling */
@@ -109,9 +109,7 @@ table tr:hover {
     font-size: 3rem; /* Povećana veličina naslova */
 }
 
-#home p {
-    font-size: 1.8rem; /* Povećana veličina paragrafa */
-}
+
 
 
 /* Home Image */

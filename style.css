@@ -6,15 +6,44 @@ body, h1, h2, p, nav, footer, button {
     font-size: 1rem;
 }
 
-
-/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(to bottom, #003366, #3399ff);
-    color: #fff;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #87CEEB, #f4f4f4); /* Nebo sa snegom */
+    overflow: hidden;
 }
+
+/* Snežno brdo */
+.snow-hill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid white;
+}
+
+/* Snežne pahulje */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(calc(-50px + 100px * random()));
+    }
+}
+
 
 /* Header */
 header {

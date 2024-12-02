@@ -14,12 +14,12 @@ body {
 }
 
 html, body {
-    height: auto; /* Omogućava da sadržaj raste i omogućuje skrol */
+    height: auto; /* Omogućava sadržaj stranice da raste */
 }
 
 /* Snežno brdo */
 .snow-hill {
-    position: fixed; /* Fiksirano u donjem levom uglu ekrana */
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 0;
@@ -32,13 +32,13 @@ html, body {
 
 /* Snežne pahulje */
 .snowflake {
-    position: fixed; /* Fiksirano u odnosu na ekran, ne skroluje se sa sadržajem */
+    position: fixed;
     top: -10px;
     color: white;
     font-size: 1em;
     opacity: 0.8;
     animation: fall linear infinite;
-    z-index: 5; /* Ispod sadržaja stranice */
+    z-index: 5;
 }
 
 @keyframes fall {
@@ -138,11 +138,7 @@ table tr:hover {
 }
 
 #home h2 {
-    font-size: 3rem; /* Povećana veličina naslova */
-}
-
-home p {
-    font-size: 2.5rem; /* Povećaj veličinu paragrafa u Home sekciji */
+    font-size: 3rem;
 }
 
 /* Home Image */
@@ -151,4 +147,24 @@ home p {
     max-width: 600px;
     height: auto;
     margin-top: 20px;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #3399ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Dugme je skriveno dok se ne skroluje stranica */
+    z-index: 15;
+}
+
+#scrollToTopBtn:hover {
+    background: #ff6600;
 }

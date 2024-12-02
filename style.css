@@ -141,6 +141,10 @@ table tr:hover {
     font-size: 3rem;
 }
 
+#home p {
+    font-size: 3rem;
+}
+
 /* Home Image */
 .home-image {
     width: 100%;

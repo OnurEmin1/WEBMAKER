@@ -10,25 +10,16 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #87CEEB, #f4f4f4); /* Nebo sa snegom */
-    overflow: hidden;
+    overflow-x: hidden; /* Sprečava horizontalno skrolovanje */
 }
-
 
 html, body {
-    height: 100%; /* Omogućava da stranica zauzme celu visinu prozora */
-    margin: 0; /* Uklanja margine koje mogu izazvati skrol */
-    overflow: hidden; /* Sprečava prikazivanje skrol trake */
+    height: auto; /* Omogućava da sadržaj raste i omogućuje skrol */
 }
-
-.container {
-    min-height: 100vh; /* Osigurava da sekcije zauzimaju celu visinu ekrana */
-}
-
-
 
 /* Snežno brdo */
 .snow-hill {
-    position: absolute;
+    position: fixed; /* Fiksirano u donjem levom uglu ekrana */
     bottom: 0;
     left: 0;
     width: 0;
@@ -36,16 +27,18 @@ html, body {
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
     border-bottom: 150px solid white;
+    z-index: 10;
 }
 
 /* Snežne pahulje */
 .snowflake {
-    position: absolute;
+    position: fixed; /* Fiksirano u odnosu na ekran, ne skroluje se sa sadržajem */
     top: -10px;
     color: white;
     font-size: 1em;
     opacity: 0.8;
     animation: fall linear infinite;
+    z-index: 5; /* Ispod sadržaja stranice */
 }
 
 @keyframes fall {
@@ -56,7 +49,6 @@ html, body {
         transform: translateY(100vh) translateX(calc(-50px + 100px * random()));
     }
 }
-
 
 /* Header */
 header {
@@ -152,7 +144,6 @@ table tr:hover {
 home p {
     font-size: 2.5rem; /* Povećaj veličinu paragrafa u Home sekciji */
 }
-
 
 /* Home Image */
 .home-image {

@@ -42,7 +42,7 @@ html, body {
 }
 
 @keyframes fall {
-    0% {
+    10% {
         transform: translateY(0) translateX(0);
     }
     100% {

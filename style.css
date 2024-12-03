@@ -151,7 +151,12 @@ table tr:hover {
 #about p {
     font-size: 2rem;
 }
-
+#contact h2 {
+    font-size: 3rem;
+}
+#contact p {
+    font-size: 2rem;
+}
 /* Home Image */
 .home-image {
     width: 100%;
